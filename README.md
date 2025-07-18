@@ -29,6 +29,7 @@ mon-projet-docker/
 
 Un **Dockerfile** décrit comment construire une image Docker personnalisée.
 
+```bash
 dockerfile
 # Image de base officielle
 FROM python:3.11
@@ -45,7 +46,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Démarrer le script principal
 CMD ["python", "main.py"]
 
-Explication ligne par ligne :
+```
 
 FROM: démarre à partir d'une image existante (ici Python).
 
@@ -60,7 +61,7 @@ CMD: commande à exécuter quand le conteneur démarre.
 
 
 ## .dockerignore
-
+```bash
 __pycache__/
 *.pyc
 .env
@@ -84,7 +85,8 @@ docker rm <container_id>
 
 # Supprimer une image
 docker rmi <image_id>
-
+````
+```bash
 ## docker-compose.yml
 version: '3'
 services:
@@ -95,6 +97,4 @@ services:
     volumes:
       - .:/app
 Lancer avec : docker-compose up
-
-##  Nettoyage
-docker system prune
+```
