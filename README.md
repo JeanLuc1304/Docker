@@ -13,17 +13,6 @@
 - Connaissances de base en ligne de commande
 - Compte GitHub
 
-## Structure du projet
-mon-projet-docker/
-├── Dockerfile
-├── .dockerignore
-├── docker-compose.yml # facultatif
-├── README.md
-├── requirements.txt # dépendances Python
-└── app/
-├── main.py # fichier principal Python
-└── autres fichiers éventuels
-
 
 ##  Le fichier Dockerfile
 
